@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
-
+//the sebha tab
 class SebhaTab extends StatefulWidget {
   static const String routeName = 'sebhatab';
-
   @override
   _SebhaTabState createState() => _SebhaTabState();
 }
-
 class _SebhaTabState extends State<SebhaTab> with SingleTickerProviderStateMixin {
   int counter = 0;
   int currentDoaaIndex = 0;
