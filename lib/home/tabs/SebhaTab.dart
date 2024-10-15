@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
-//the sebha tab
 class SebhaTab extends StatefulWidget {
   static const String routeName = 'sebhatab';
   @override
