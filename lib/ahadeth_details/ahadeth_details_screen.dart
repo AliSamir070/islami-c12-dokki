@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:islamy_c12_dokki/home/Hadeth.dart';
 
+import '../style/AppStyle.dart';
+
 class AhadethDetails extends StatelessWidget {
   static const String routeName = "ahadethdetails";
   const AhadethDetails({super.key});
@@ -12,7 +14,9 @@ class AhadethDetails extends StatelessWidget {
     return Container(
         decoration: BoxDecoration(
             image: DecorationImage(
-                image: AssetImage("assets/images/background.png"),
+                image: AssetImage(AppStyle.isDark
+                    ?"assets/images/home_dark_background.png"
+                    :"assets/images/background.png"),
                 fit: BoxFit.fill
             )
         ),
@@ -24,9 +28,7 @@ class AhadethDetails extends StatelessWidget {
             children: [
               Expanded(
                 child: Card(
-                  child: SingleChildScrollView(child: Text(args.content,style: TextStyle(
-                    fontSize: 30
-                  ),)),
+                  child: SingleChildScrollView(child: Text(args.content,style:Theme.of(context).textTheme.displayMedium,)),
                 ),
               ),
             ],
