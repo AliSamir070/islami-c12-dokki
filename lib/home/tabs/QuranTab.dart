@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 import '../SuraNameWidget.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class QuranTab extends StatelessWidget {
   List<String> suraNames = [
@@ -35,25 +36,21 @@ class QuranTab extends StatelessWidget {
         Row(
           children: [
             Expanded(
-              child: Text("Sura Name",
+              child: Text(AppLocalizations.of(context)!.sura_name,
                 textAlign: TextAlign.center,
-                style: TextStyle(
-                fontSize: 20
-              ),),
+                style: Theme.of(context).textTheme.titleMedium,),
             ),
             Container(
               height: 40,
               width: 2,
               decoration: BoxDecoration(
-                color: Theme.of(context).colorScheme.primary
+                color: Theme.of(context).colorScheme.onPrimaryContainer
               ),
             ),
             Expanded(
-              child: Text("Verses Number",
+              child: Text(AppLocalizations.of(context)!.verses_number,
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                  fontSize: 20
-              )),
+                  style: Theme.of(context).textTheme.titleMedium),
             ),
           ],
         ),
