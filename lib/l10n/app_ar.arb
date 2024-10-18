@@ -5,5 +5,9 @@
     "quran":"قرأن",
     "ahadeth":"احاديث",
     "radio":"اذاعة",
-    "tasbeeh":"تسبيح"
+    "tasbeeh":"تسبيح",
+    "settings":"الإعدادات",
+    "language":"اللغة",
+    "theme":"الوضع الداكن",
+    "active_language":"العربية"
 }
