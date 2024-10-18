@@ -5,5 +5,9 @@
     "quran":"Quran",
     "ahadeth":"Ahadeth",
     "radio":"Radio",
-    "tasbeeh":"Tasbeeh"
+    "tasbeeh":"Tasbeeh",
+    "settings":"Settings",
+    "language":"Language",
+    "theme":"Dark Theme",
+    "active_language":"English"
 }
